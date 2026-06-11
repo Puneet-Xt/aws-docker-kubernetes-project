@@ -12,12 +12,19 @@ This project demonstrates end-to-end deployment of a Node.js application using:
 
 ## Architecture
 
-CloudFormation
-→ EC2
-→ Docker
-→ Kubernetes Deployment
-→ NodePort Service
-→ SNS Email Notification
+User
+  ↓
+AWS EC2
+  ↓
+Docker Container
+  ↓
+Kubernetes (K3s)
+  ↓
+NodePort Service
+  ↓
+Node.js Application
+  ↓
+AWS SNS Email Notification
 
 ## Technologies Used
 
